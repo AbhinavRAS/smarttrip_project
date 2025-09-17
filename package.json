@@ -1,0 +1,16 @@
+{
+  "name": "smarttrip_project",
+  "version": "1.0.0",
+  "description": "AI-powered travel planner with Django, Flask, FastAPI, SQL, and Docker.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

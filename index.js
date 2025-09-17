@@ -1,0 +1,1 @@
+console.log("SmartTrip Project is running!");

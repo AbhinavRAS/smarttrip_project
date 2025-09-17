@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  django:
+    build: ./services/django
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+  flask:
+    build: ./services/flask
+    ports:
+      - "5000:5000"
+
+  fastapi:
+    build: ./services/fastapi
+    ports:
+      - "8001:8001"
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: smarttrip
+
+  ai:
+    build: ./services/ai
+    ports:
+      - "8002:8002"
